@@ -42,9 +42,8 @@ int main()
     
     std::cout << "\n";
 
-
-
     bruh.PlayGame();
+
     return 0;
 }
 

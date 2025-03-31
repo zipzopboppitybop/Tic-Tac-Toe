@@ -23,18 +23,20 @@ void TicTacToeGame::element(int num, std::string newElement)
 
 void TicTacToeGame::PlayGame()
 {
-	grid(std::vector<std::string>(9, " "));
+	std::vector<std::string> newGrid = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+	grid(newGrid);
 
 	for (int i = 1; i < mGrid.size() + 1; i++)
 	{
 		std::string element = mGrid[i - 1];
+
 		if (i % 3 == 0)
 		{
-			std::cout << " " << element << " " << "\n" << "_ _ _ _ _ _ _ \n\n";
+			std::cout << " " << element << "" << "\n" << "_ _ _ _ _ _ \n\n";
 		}
 		else
 		{
-			std::cout << " " << element << " | ";
+			std::cout << " " << element << " |";
 		}
 	}
 }
